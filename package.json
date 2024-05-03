@@ -1,0 +1,11 @@
+{
+  "name": "chat_app_be",
+  "version": "1.0.0",
+  "description": "Chat app using React, express and socke.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sushil Dahiya",
+  "license": "ISC"
+}
