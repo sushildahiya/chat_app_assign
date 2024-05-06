@@ -1,0 +1,66 @@
+.chatSectionContainer{
+    padding:1.5em;
+    padding-bottom:0;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    box-sizing: border-box;
+}
+
+.topHeader{
+    height:10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:.5em;
+    border-bottom: 1px solid rgb(199, 193, 193);
+}
+
+.activeUsers{
+    display: flex;
+    align-items: center;
+}
+#roomDescription{
+    color:rgb(155, 148, 148);
+}
+#userAvatar{
+    color:rgb(177, 169, 169);
+    font-size: x-large;
+    padding-left:.3em;
+}
+
+.chatContainer{
+    height:80%;
+}
+
+.inputContainer{
+    height:7%;
+    position: relative;
+    border-radius: 20px;
+    border:1px solid grey;
+}
+.inputContainer>input[type="text"]{
+    width: 95%;
+    height:100%;
+    background-color:transparent;
+    box-sizing: border-box;
+    padding-left:1.5em;
+    font-size: 1em;
+}
+
+.inputContainer>input,.inputContainer>input:focus{
+    border:0 solid transparent;
+    border-radius:20px;
+}
+
+.emoji{
+    position: absolute;
+    bottom:100%;
+    right:0;
+}
+#emojiButton{
+    font-size: x-large;
+    border:none;
+    /* right:2%;
+    bottom:40%; */
+}
