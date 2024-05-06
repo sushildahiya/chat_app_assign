@@ -1,0 +1,100 @@
+.sidebarSection{
+    height:100%;
+}
+.userSection{
+    display: flex;
+    height:20%;
+    align-items: flex-start;
+    padding-top:1em;
+}
+
+.userNameSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:.6em;
+}
+
+.userNameSection>p{
+    color:rgb(160, 153, 153)
+}
+
+#userProfileImage{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#userProfileImage> span{
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+#userActive{
+    position:absolute;
+    border-radius: 100%;
+    background-color: rgb(59, 214, 59);
+    height:13px;
+    width:13px;
+    border:2px solid white;
+    bottom:2px;
+    right:.5px;
+}
+
+.conversationSection{
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:.5em;
+}
+.circlePlus{
+    font-size: xx-large;
+    color:rgb(141, 134, 134);
+}
+
+
+
+.roomSection{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.roomContainer{
+    padding:.5em 0;
+    padding-left:.5em;
+    display: flex;
+    font-size:larger;
+    align-items: center;
+}
+#hash{
+    background-color: rgb(235, 225, 225);
+    width:40px;
+    height:40px;
+    border-radius: 15px;
+    font:x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#roomName{
+    padding-left: .6em;
+}
+
+
+
+.active{
+    background-color:#629df4;
+    color:white;
+}
+.active>#hash{
+    background-color: #6093e7;
+}
