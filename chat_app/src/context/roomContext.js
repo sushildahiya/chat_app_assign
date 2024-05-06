@@ -12,7 +12,6 @@ function CustomRoomContext({children}){
     const [currentRoom,setCurrentRoom]=useState({})
     const [rooms,setRooms]=useState([])
     const [messages,setMessage]=useState([])
-    
 
     useEffect(()=>{
         const storedUser = sessionStorage.getItem("user");
@@ -55,8 +54,12 @@ function CustomRoomContext({children}){
         const roomOb = rooms.filter((item)=>item.id===id)[0]
         setCurrentRoom(roomOb)
     }
+
+    const addMessage=(message)=>{
+        setMessage([...messages,message])
+    }
     return(
-        <roomContext.Provider value={{user,rooms,currentRoom,messages,changeRoom, userList}}>
+        <roomContext.Provider value={{user,rooms,currentRoom,messages,changeRoom, userList,addMessage}}>
             {children}
         </roomContext.Provider>
     )

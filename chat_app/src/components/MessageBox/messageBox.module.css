@@ -1,0 +1,38 @@
+.messageBoxContainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.userProfileAvatar{
+    min-height:45px;
+    min-width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.userProfileAvatar>span{
+    font-size: large;
+    color:white;
+    font-weight: 700;
+}
+.messageContainer{
+    padding:.3em .8em;
+}
+
+.userNameContainer{
+    display: flex;
+    align-items: center;
+}
+.messageBox{
+    margin-top:.3em;
+    word-break:break-all;
+    text-wrap: wrap;
+    word-wrap:break-word;
+    width: 80%;
+    background-color: white;
+    border-radius: 0 14px 14px 14px;
+    padding:.8em;
+}
+

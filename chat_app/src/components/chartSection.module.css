@@ -30,7 +30,12 @@
 }
 
 .chatContainer{
+    overflow-y:auto;
+
     height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .inputContainer{
@@ -40,7 +45,7 @@
     border:1px solid grey;
 }
 .inputContainer>input[type="text"]{
-    width: 95%;
+    width: 92%;
     height:100%;
     background-color:transparent;
     box-sizing: border-box;
@@ -58,9 +63,15 @@
     bottom:100%;
     right:0;
 }
+#emojiButton,#sendButton{
+    font-size: larger;
+
+    border:none;
+}
 #emojiButton{
     font-size: x-large;
-    border:none;
-    /* right:2%;
-    bottom:40%; */
 }
+
+
+
+
